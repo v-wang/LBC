@@ -7,8 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="mastercontainer">
+		<header>
+			<nav>
+				<h1>Law Breaking Citizen</h1>
+				<ul>
+					<li>home</li>
+					<li>about</li>
+					<li>contact</li>
+					<li>my account</li>
+					<li>sign out</li>
+				</ul>	
+			</nav>
+		</header>
+		
+		<%= yield %>
 
-<%= yield %>
-
+		<footer>
+			<ul>
+				<li>twitter</li>
+				<li>facebook</li>
+				<li>reddit</li>
+			</ul>
+		</footer>
+	</div>
 </body>
 </html>

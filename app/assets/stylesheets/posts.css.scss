@@ -1,3 +1,71 @@
 // Place all the styles related to the Post controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*POSTFEED PAGE*/
+#postfeed_maincontainer {
+	width: 940px;
+	/*border: 1px solid black;*/
+/*	position: absolute;*/
+	margin-top:  30px;
+	margin-left: 30px;
+}
+
+#postfeed {
+	width: 750px;
+	border-right: 1px solid rgba(0,0,0,0.3);
+	float: left;
+
+}
+#postfeed ul {
+	list-style: circle;
+	line-height: 40px;
+}
+
+#postfeed_options h5{
+	margin-left: 35px;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+#postfeed_rightcontainer{
+	width: 180px;
+	height: auto;
+	float: right;
+}
+
+#notoriety {
+	margin-top: 80px;
+	text-align: center;
+	border-top: 1px solid black;
+}
+
+#notoriety h4 {
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 14px;
+}
+#notoriety h2 {
+	margin-bottom: 10px;
+}
+
+#notoriety em {
+	color: orange;
+}
+
+#notoriety div {
+	width: 80px;
+	height: 12px;
+	font-size: 10px;
+	border-radius: 12px;
+	background-color: orange;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+#post_textbox {
+	height: 300px;
+	border:1px solid black;
+}
+/*END POSTFEED PAGE*/

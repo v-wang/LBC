@@ -1,2 +1,15 @@
-<h1>User#show</h1>
-<p>Find me in app/views/user/show.html.erb</p>
+<h1>User</h1>
+<h3><%= @user.username %></h3>
+<ul>
+	
+	<li>bio: <%= @user.bio %></li>
+</ul>
+
+<h3><%= "#{@user.username}'s Crimes" %></h3>
+<ul>
+	<% @user.posts.each do |post| %>
+		<li><%= post.body %> (<%= link_to "X", post_path(post), method: "delete" %>)</li>
+	<% end %>
+</ul>
+
+<p><%= link_to "New Crime!", new_post_path %></p>

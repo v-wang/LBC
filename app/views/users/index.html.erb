@@ -8,7 +8,35 @@
 		<p>Who knows? You may become the teflon don of your block!</p>
 		<p>-- Come join our community of rebels and share your unlawful story! --</p>
 	</div>
-	<div id="signin_signup">
+	<div id="signin_signup"><h2> Log in </h2><br> 
+	<%= form_tag('sessions', method: 'post') do %>
+	<%= label_tag(:username, "Username:") %>
+	<%= text_field_tag :username %><br />
+	<%= label_tag(:password, "Password:") %>
+	<%= password_field_tag :password %><br />
+	<%= submit_tag "Login" %> <br> 
+
+
+	Sign Up
+
+	<h1>New User</h1>
+	<%= form_for(@user) do |f| %>
+	<%= f.label :username %>
+	<%= f.text_field :username %><br />
+	<%= f.label :password %>
+	<%= f.password_field :password %><br >
+	<%= f.label :bio %>
+	<%= f.text_area :bio %><br />
+	<%= f.submit :create %>
+<% end %>
+
+	
+<% end %>
+
+
+
+	<%= yield %>
+	
 		
 	</div>
 	

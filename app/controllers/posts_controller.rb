@@ -50,7 +50,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(:body)
   end
 
-  def set_chirp
+  def set_post
     @post = Post.find(params[:id])
   end
 end

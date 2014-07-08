@@ -7,14 +7,7 @@ class UsersController < ApplicationController
   end
 
   def new
-  
-    @user = User.new 
-    redirect_to user_path
-
-
-  end
-
-  def new
+    @user = User.new
   
   end
 

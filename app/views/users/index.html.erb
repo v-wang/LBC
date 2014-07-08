@@ -19,15 +19,10 @@
 	
 
 
-	<div id="signin_signup"><h2> Log in </h2><br> 
-	<%= form_tag('sessions', method: 'post') do %>
-	<%= label_tag(:username, "Username:") %>
-	<%= text_field_tag :username %><br />
-	<%= label_tag(:password, "Password:") %>
-	<%= password_field_tag :password %><br />
-	<%= submit_tag "Login" %> <br> 
-	<% end %>
+	<div id="signin_signup"><h2>
 
+	<p><%= link_to "Sign in", login_path %> <br> <br> <br>
+	<%= link_to "Sign up", new_user_path %></p>
 	
 	</div>
 </div>
